@@ -1,0 +1,112 @@
+@charset "UTF-8";
+ 
+           /* General body styling */
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Card styling */
+.card {
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 40px;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    letter-spacing: 4.0px;
+    margin: 0;
+    
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+}
+
+/* Input fields */
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+    outline: none;
+}
+
+/* Labels */
+.form-label {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #e85a4f;
+    cursor: pointer;
+}
+
+/* Switch link (for toggling between Login/Register forms) */
+.switch-link {
+    color: #ff6f61;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+
+.switch-link:hover {
+    color: #e85a4f;
+}
+
+/* Additional styles for better form spacing and alignment */
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.d-grid {
+    display: grid;
+    gap: 15px;
+}
+
+/* Text under the form */
+.text-center {
+    font-size: 16px;
+    color: #555;
+}
+
+      
+    
