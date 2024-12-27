@@ -1,0 +1,54 @@
+create database onlineshopping;
+use onlineshopping;
+create table login(
+id int not null  primary key auto_increment,
+name varchar(20),
+email varchar(50) ,
+password varchar(50) not null,
+Contact varchar(100) not null,
+Address varchar(100) not null
+
+);
+insert into login values(1,"Abhijeet","a@gmail.com","a","9284191148","Tulsi Kalash , near Rasayani police station , rasayani,raigad-413624");
+select * from login;
+drop table login;
+/* Product Database */
+create table product(
+id int not null primary key auto_increment ,
+pname varchar(50) not null,
+category varchar(50) not null,
+price decimal(8,2),
+image varchar(200)
+);
+drop table product;
+
+insert into product( pname,category,price,image)
+values("ArtiCShirts","Fashion",200,"shirt2.jpeg");
+insert into product( pname,category,price,image)
+values("Real ME","Mobile",50,"realme.jpeg");
+insert into product( pname,category,price,image)
+values("GodRej SmartAc","Home Automation",500,"ac.jpeg");
+insert into product( pname,category,price,image)
+values("Mizo halfSlive Tshirt","Fashion",220,"shirt3.jpeg");
+insert into product( pname,category,price,image)
+values("DERMA-NU face wash","Beauty",230,"beauty2.jpeg");
+insert into product( pname,category,price,image)
+values("IRS Watch","Gadgets",1320,"watch.jpeg");
+insert into product( pname,category,price,image)
+values("RedTape mega-black","Shoes",1450,"shoes2.jpeg");
+update product set image="hoodie.jpeg" where id =13 ;
+select * from product;
+
+create table orders(
+Oid int not null auto_increment primary key,
+p_id int not null,
+u_id int not null,
+o_quantity int not null,
+o_date varchar(450) not null
+);
+
+insert into ItemOrder values(25,3,1,3,"2021-05-25");
+select * from ItemOrder;
+drop table ItemOrder;
+truncate table ItemOrder;
+
